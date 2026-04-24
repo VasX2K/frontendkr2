@@ -1,2 +1,42 @@
+<<<<<<< HEAD
+# dependencies
+node_modules/
+
+# build
+dist/
+build/
+
+# env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+
+# coverage
+coverage/
+
+# cache
+.cache/
+.parcel-cache/
+vite.svg
+=======
 node_modules/
 .DS_Store
+>>>>>>> e6cd4a2a0d8b31af6d74757571e9e47865cf9b69

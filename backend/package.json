@@ -1,4 +1,13 @@
 {
+<<<<<<< HEAD
+  "name": "rbac-products-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {"dev": "nodemon src/server.js", "start": "node src/server.js"},
+  "dependencies": {"bcrypt": "^5.1.1", "cors": "^2.8.5", "dotenv": "^16.4.7", "express": "^4.21.2", "jsonwebtoken": "^9.0.2", "morgan": "^1.10.0", "swagger-jsdoc": "^6.2.8", "swagger-ui-express": "^5.0.1"},
+  "devDependencies": {"nodemon": "^3.1.9"}
+=======
   "name": "backend",
   "version": "1.0.0",
   "description": "Backend API with authentication, JWT, RBAC",
@@ -17,4 +26,5 @@
   "devDependencies": {
     "nodemon": "^3.0.2"
   }
+>>>>>>> e6cd4a2a0d8b31af6d74757571e9e47865cf9b69
 }

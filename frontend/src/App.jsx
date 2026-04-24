@@ -1,3 +1,35 @@
+<<<<<<< HEAD
+import React, { useState } from 'react';
+import { AuthForm } from './components/AuthForm';
+import { useAuth } from './context/AuthContext';
+import { ProductsPage } from './pages/ProductsPage';
+import { ProfilePage } from './pages/ProfilePage';
+import { AdminPage } from './pages/AdminPage';
+import './styles/main.scss';
+
+export default function App() {
+  const { user, loading, logout, isAdmin } = useAuth();
+  const [page, setPage] = useState('products');
+
+  if (loading) return <main className="container"><p>Загрузка...</p></main>;
+  if (!user) return <main className="container"><AuthForm /></main>;
+
+  return <main className="container">
+    <header className="topbar">
+      <div><h1>RBAC Products</h1><p>{user.email} · <b>{user.role}</b></p></div>
+      <nav>
+        <button onClick={() => setPage('products')}>Товары</button>
+        <button onClick={() => setPage('profile')}>Мои данные</button>
+        {isAdmin && <button onClick={() => setPage('admin')}>Админка</button>}
+        <button className="danger" onClick={logout}>Выйти</button>
+      </nav>
+    </header>
+    {page === 'products' && <ProductsPage />}
+    {page === 'profile' && <ProfilePage />}
+    {page === 'admin' && <AdminPage />}
+  </main>;
+}
+=======
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './AuthContext.jsx';
@@ -119,3 +151,4 @@ function App() {
 }
 
 export default App;
+>>>>>>> e6cd4a2a0d8b31af6d74757571e9e47865cf9b69

@@ -1,4 +1,12 @@
 {
+<<<<<<< HEAD
+  "name": "rbac-products-frontend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {"dev": "vite", "build": "vite build", "preview": "vite preview"},
+  "dependencies": {"@vitejs/plugin-react": "^4.3.4", "axios": "^1.7.9", "vite": "^6.0.7", "react": "^18.3.1", "react-dom": "^18.3.1", "sass": "^1.83.0"},
+  "devDependencies": {}
+=======
   "name": "frontend",
   "version": "1.0.0",
   "private": true,
@@ -17,4 +25,5 @@
     "@vitejs/plugin-react": "^4.2.1",
     "vite": "^5.0.8"
   }
+>>>>>>> e6cd4a2a0d8b31af6d74757571e9e47865cf9b69
 }
